@@ -9,7 +9,6 @@
         dfs(img , sr , sc-1, newColor , row , col , source);
         dfs(img , sr , sc+1, newColor , row , col , source);
     }
-    
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor) {
         if(image[sr][sc] == newColor)
             return image;
