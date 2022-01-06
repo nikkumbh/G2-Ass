@@ -4,10 +4,6 @@
         else if(img[sr][sc]!=source)
             return;
         img[sr][sc] = newColor;
-        
-
-
-        
         dfs(img , sr-1 ,sc, newColor , row , col , source);
         dfs(img , sr+1 ,sc, newColor , row , col , source);
         dfs(img , sr , sc-1, newColor , row , col , source);
